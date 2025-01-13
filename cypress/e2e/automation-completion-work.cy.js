@@ -61,7 +61,7 @@ describe('Trabalho de conclusão', () => {
 
     });
     
-    it.only('Test Case 6: Contact Us Form', () => {
+    it('Test Case 6: Contact Us Form', () => {
 
         contato.preencherContato()
         cy.get(`.status`).should('be.visible').and('have.text', 'Success! Your details have been submitted successfully.')
